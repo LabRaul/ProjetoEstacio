@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Plano de Saúde</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="card col-6 mx-auto">
+        <h5 class="card-header">Planos de Saúde</h5>
+        <div class="card-body">
+        <div class="calculator">
+            <div class="user-input">
+                <form onsubmit="return false">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome do Cliente:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label">Idade:</label>
+                    <input type="number" class="form-control" id="age" required>
+                </div>
+                <div class="mb-3">
+                    <label for="weight" class="form-label">Peso (Kg):</label>
+                    <input type="text" class="form-control" id="weight" required>
+                </div>
+                <div class="mb-3">
+                    <label for="height" class="form-label">Altura (cm):</label>
+                    <input type="text" class="form-control" id="height" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Telefone:</label>
+                    <input type="number" class="form-control" id="phone" >
+                </div>
+                <div class="form-floating">
+                    <select id="sex" class="form-select" id="floatingSelect" aria-label="Floating label select example" required>
+                        <option selected>Selecione</option>
+                        <option value="male">Masculino</option>
+                        <option value="female">Feminino</option>
+                    </select>
+                    <label for="floatingSelect">Sexo</label>
+                </div>  
+                <br>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button id="calculate" type="submit" class="btn btn-primary">Calcular</button>
+                </div>
+            </form>
+        </div>
+        </div>
+            <hr>
+            <div class="card">
+                <h5 class="card-footer text-center">Resultados</h5>
+                <div class="table-responsive-md">
+                    <table class="table table-hover"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
